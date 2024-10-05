@@ -3,6 +3,9 @@ import CommonLayout from './layouts/CommonLayout';
 import Homepage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
 import { ROUTES } from './routes';
+import Login from './pages/LoginPage';
+import Register from './pages/RegisterPage';
+import ImageSection from './components/ImageSection';
 
 const router = createBrowserRouter([
   {
@@ -10,8 +13,9 @@ const router = createBrowserRouter([
     element: <CommonLayout />,
     children: [
       { path: ROUTES.HOME, element: <Homepage /> },
-    //   { path: ROUTES.FAQ, element: <FAQ /> },
-    //   { path: ROUTES.ABOUT, element: <ABOUT /> },
+      { path: ROUTES.LOGIN, element: <Login /> },
+      { path: ROUTES.REGISTER, element: <Register /> },
+      { path: ROUTES.PRODUCT, element: <ImageSection /> },
     //   { path: ROUTES.BLOG, element: <BLOG /> },
     //   { path: ROUTES.SINGLE_BOOK.STATIC, element: <BookDetailsPage /> },
     ],
