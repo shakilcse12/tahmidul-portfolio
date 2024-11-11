@@ -1,54 +1,51 @@
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { ROUTES } from '../routes';
+import React from 'react';
+import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 text-white py-8">
-      <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center px-6">
+    <footer className="bg-gray-800 text-gray-300 py-8">
+      <div className="container mx-auto px-6 lg:px-12">
         
-        <div className="flex flex-col text-center lg:text-left mb-6 lg:mb-0">
-          <h2 className="text-lg font-bold mb-2">All kinds of books are available here</h2>
-          <p className="text-md text-gray-300">Best books at affordable prices</p>
+        {/* Logo and Brief Intro */}
+        <div className="flex flex-col md:flex-row justify-between items-center mb-6">
+          <h3 className="text-2xl font-bold text-white mb-4 md:mb-0">Tahmidul's Portfolio</h3>
+          <p className="text-center md:text-left text-gray-400 max-w-md">
+            A passionate developer ready to bring your ideas to life. Let’s connect and create something amazing together!
+          </p>
         </div>
-
-        <ul className="flex lg:pr-44 space-x-6 mb-6 lg:mb-0">
-          <li><a href={ROUTES.HOME} className="hover:text-gray-300 transition duration-300">Home</a></li>
-          <li><a href={ROUTES.ABOUT} className="hover:text-gray-300 transition duration-300">About</a></li>
-          <li><a href={ROUTES.FAQ} className="hover:text-gray-300 transition duration-300">FAQ</a></li>
-        </ul>
-
-        <div className="flex space-x-4">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-400 transition duration-300 transform hover:scale-110"
-          >
-            <FaFacebook size={28} />
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-300 transition duration-300 transform hover:scale-110"
-          >
-            <FaTwitter size={28} />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-pink-400 transition duration-300 transform hover:scale-110"
-          >
-            <FaInstagram size={28} />
-          </a>
+        
+        {/* Links and Socials */}
+        <div className="flex flex-col md:flex-row justify-between items-center mb-8">
+          
+          {/* Navigation Links */}
+          <div className="flex space-x-6 mb-4 md:mb-0">
+            <a href="#about" className="hover:text-white">About</a>
+            <a href="#projects" className="hover:text-white">Projects</a>
+            <a href="#skills" className="hover:text-white">Skills</a>
+            <a href="#contact" className="hover:text-white">Contact</a>
+          </div>
+          
+          {/* Social Links */}
+          <div className="flex space-x-4 text-gray-400 text-2xl">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <FaGithub />
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <FaLinkedin />
+            </a>
+            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+              <FaTwitter />
+            </a>
+            <a href="mailto:yourname@example.com" className="hover:text-white">
+              <FaEnvelope />
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div className="mt-6 border-t border-gray-600 pt-4 text-center">
-        <p className="text-sm font-bold text-gray-400">
-          &copy; {new Date().getFullYear()} Rokomari. All rights reserved.
-        </p>
+        
+        {/* Copyright */}
+        <div className="text-center text-gray-500 text-sm">
+          &copy; {new Date().getFullYear()} Tahmidul Shakil. All Rights Reserved.
+        </div>
       </div>
     </footer>
   );
