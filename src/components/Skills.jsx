@@ -1,6 +1,8 @@
 import React from 'react';
-import { FaReact, FaNodeJs, FaDatabase, FaHtml5, FaCss3Alt, FaJsSquare } from 'react-icons/fa'; 
-import { SiTailwindcss, SiMongodb, SiExpress, SiNextdotjs } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaDatabase, FaHtml5, FaCss3Alt, FaJsSquare, FaJava } from 'react-icons/fa'; 
+import { SiTailwindcss, SiMongodb, SiExpress, SiNextdotjs, SiReactrouter } from 'react-icons/si';
+import { FaAndroid } from 'react-icons/fa';  // You can add the Android icon here
+import { SiReact } from 'react-icons/si';  // React Native icon can be used with 'SiReact' for now
 
 const skills = [
   { name: 'React', icon: <FaReact size={40} className="text-blue-500" /> },
@@ -13,6 +15,10 @@ const skills = [
   { name: 'Tailwind CSS', icon: <SiTailwindcss size={40} className="text-blue-400" /> },
   { name: 'Next.js', icon: <SiNextdotjs size={40} className="text-black" /> },
   { name: 'Databases', icon: <FaDatabase size={40} className="text-purple-600" /> },
+  { name: 'Android', icon: <FaAndroid size={40} className="text-green-800" /> },  // Android icon
+  { name: 'React Native', icon: <SiReact size={40} className="text-blue-400" /> },  // React Native icon
+  { name: 'Java', icon: <FaJava size={40} className="text-red-600" /> },  // Java icon
+  { name: 'XML', icon: <SiReactrouter size={40} className="text-gray-600" /> },  // Placeholder for XML (you can replace with XML-related icon)
 ];
 
 const Skills = () => {
