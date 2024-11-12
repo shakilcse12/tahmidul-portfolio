@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll'; // Make sure to install react-scroll with 'npm install react-scroll'
 import { HiMenu, HiX } from 'react-icons/hi';
-import logo from '../assets/logos-food3.jpeg'; // Replace this with the path to your logo
+import logo from '../assets/myportfolio2.png'; // Replace this with the path to your logo
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,8 +15,18 @@ function Navbar() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={logo} alt="Logo" className="h-10 w-10 mr-2" />
-          <span className="text-2xl font-bold text-indigo-600">Tahmidul Shakil</span>
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}>
+              <img src={logo} alt="Logo" className="h-10 w-10 mr-2 cursor-pointer" />
+          </Link>
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}>
+          <span className="text-2xl font-bold text-indigo-600 cursor-pointer">Tahmidul Shakil</span>
+          </Link>
         </div>
 
         {/* Desktop Menu */}

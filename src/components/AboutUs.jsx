@@ -6,7 +6,7 @@ function AboutUs() {
       <div className="container mx-auto px-6 md:px-12 lg:px-24">
         <h2 className="text-4xl font-bold text-indigo-600 mb-8">About Me</h2>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-12">
-          I'm Tahmidul Shakil, a full-stack developer with over 3+ years of experience delivering high-quality solutions for global clients. Passionate about creating efficient and visually stunning applications.
+          I'm Tahmidul Shakil, a full-stack developer with over 3+ years of experience both in web development and mobile app development delivering high-quality solutions for global clients. Passionate about creating efficient and visually stunning applications.
         </p>
 
         {/* Statistics Section */}

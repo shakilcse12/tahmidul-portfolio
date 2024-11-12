@@ -1,15 +1,14 @@
 import React from 'react';
 import profileImage from "../assets/tahmidul.jpg"
 import { Link } from 'react-scroll';
+import resume from '../assets/resume_tahmidul.pdf';
+
 function Banner() {
   return (
-    <section id="home" className="relative flex items-center justify-center h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-600 text-white">
-      {/* Background Overlay */}
+<section id="home" className="relative flex items-center justify-center h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-600 text-white">
+{/* Background Overlay */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
-
-      {/* Profile Image */}
       
-
       {/* Content */}
       <div className="relative z-10 max-w-4xl text-center p-5 flex flex-col items-center">
       
@@ -30,7 +29,8 @@ function Banner() {
         </p>
 
         {/* Buttons */}
-        <div className="mt-8 flex justify-center gap-4">
+        <div className="mt-8 flex flex-col md:flex-row justify-center gap-4">
+          {/* First two buttons on the same line */}
           <Link
             to="projects"
             smooth={true}
@@ -47,7 +47,16 @@ function Banner() {
           >
             Contact Me
           </Link>
+          <a
+            href={resume}  // Replace with your actual resume link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 text-lg font-semibold bg-yellow-400 text-black rounded-lg shadow-lg hover:bg-yellow-500 hover:shadow-xl transition duration-300 cursor-pointer mt-4 md:mt-0"
+          >
+            My Resume
+          </a>
         </div>
+      
       </div>
     </section>
   );

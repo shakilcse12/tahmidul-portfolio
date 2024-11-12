@@ -60,16 +60,16 @@ const ContactUs = () => {
             <p className="text-gray-700 text-center mb-4">Or reach out through my social profiles:</p>
             
             <div className="flex space-x-6 text-indigo-600 text-3xl">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-700">
+              <a href="https://github.com/shakilcse12" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-700">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-700">
+              <a href="https://linkedin.com/in/tahmidul-shakil-8aa5b1b9" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-700">
                 <FaLinkedin />
               </a>
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-700">
+              <a href="https://twitter.com/tahmidul_shakil" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-700">
                 <FaTwitter />
               </a>
-              <a href="mailto:yourname@example.com" className="hover:text-indigo-700">
+              <a href="mailto:tahmidul.work@gmail.com" className="hover:text-indigo-700">
                 <FaEnvelope />
               </a>
             </div>
