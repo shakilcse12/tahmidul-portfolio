@@ -1,20 +1,17 @@
-// src/firebase.js
-import { initializeApp } from 'firebase/app';
-import { getAuth, GoogleAuthProvider, GithubAuthProvider, FacebookAuthProvider } from 'firebase/auth';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBMxlnu0RI4lQWHg2bi42SEIzDRT6uVs18",
-    authDomain: "react-product-frontend.firebaseapp.com",
-    projectId: "react-product-frontend",
-    storageBucket: "react-product-frontend.appspot.com",
-    messagingSenderId: "109690859458",
-    appId: "1:109690859458:web:c6c1dd4a2103c3464c705b"
+  apiKey: "AIzaSyAORez734MFrXE-RXB8MtxpSc6WGP8gn4Y",
+  authDomain: "tahmidul-portfolio.firebaseapp.com",
+  projectId: "tahmidul-portfolio",
+  storageBucket: "tahmidul-portfolio.firebasestorage.app",
+  messagingSenderId: "666963319926",
+  appId: "1:666963319926:web:7d653d54450c89b320d357"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const googleProvider = new GoogleAuthProvider();
-const githubProvider = new GithubAuthProvider();
-const facebookProvider = new FacebookAuthProvider();
-
-export { auth, googleProvider, githubProvider, facebookProvider };

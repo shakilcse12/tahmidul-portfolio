@@ -11,8 +11,8 @@ const HomePage = () => {
         <div className="flex flex-col">
             <Banner />
             <AboutUs />
-            <Projects />
             <Skills />
+            <Projects />
             <ContactUs />
             <ResumeSection />
         </div>

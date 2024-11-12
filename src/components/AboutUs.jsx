@@ -1,15 +1,16 @@
 import React from 'react';
+import tahmidulImage from '../assets/tahmidul.jpg';
 
 const AboutUs = () => {
   return (
-    <section id="about" className="py-16 bg-gray-50">
+    <section id="about" className="py-16 bg-white-50">
       <div className="container mx-auto px-6 lg:px-12 text-center md:text-left">
         <h2 className="text-3xl md:text-4xl font-bold text-indigo-600 mb-6">About Me</h2>
         
         <div className="flex flex-col md:flex-row items-center md:space-x-8">
           {/* Profile Image */}
           <img 
-            src="https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250" 
+            src={tahmidulImage} 
             alt="Profile" 
             className="rounded-lg w-40 h-40 md:w-64 md:h-64 shadow-lg mb-6 md:mb-0"
           />
